@@ -53,6 +53,13 @@ h2 {
     text-transform: uppercase;
 }
 
+#drop-nav,
+label[for="drop-nav"]  {
+    display: none;
+}
+
+
+
 
 /* Main header styles */
 
@@ -73,6 +80,7 @@ h2 {
     color: #007bff;
     text-transform: uppercase;
     margin: 0;
+    text-align: center
 }
 
 .main-header p {
@@ -239,4 +247,80 @@ h2 {
     padding: 30px;
     text-align: center;
     color: #777;
+}
+
+
+/* Responsive styles */
+
+
+@media (max-width: 1200px) {
+    .container {
+		max-width:992px;
+	}
+}
+
+
+@media (max-width: 992px) {
+
+    .container {
+		max-width:768px;
+    }
+    
+    .portfolio-wrapper .portfolio-item {
+        flex-basis: 50%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+		max-width:95%;
+    }
+
+    .portfolio-wrapper .portfolio-item {
+        flex-basis: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .main-header h1 {
+        font-size: 3em;
+    }
+
+    .about .about-image{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .contact form input:not([type="submit"]) {
+        flex-basis: 100%;
+    }
+
+
+    label[for="drop-nav"] {
+        display: block;
+        padding: 14px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: right;
+        cursor: pointer;
+    }
+
+    ul.main-menu {
+        display: none;
+    }
+
+    #drop-nav:checked + ul.main-menu {
+        display: block;
+    }
+
+    .main-nav ul.main-menu .menu-item {
+        display: block;
+        text-align: right;
+        margin: 0;
+    }
 }
