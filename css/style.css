@@ -22,6 +22,9 @@ hr {
     padding: 14px 20px;
     transition: all .3s;
     display: inline-block;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 auto;
 }
 
 .btn:hover {
@@ -89,6 +92,7 @@ h2 {
     position: sticky;
     top: 0;
     background-color: #007bff;
+    z-index: 999999;
 }
 
 .main-nav .main-menu {
@@ -182,3 +186,57 @@ h2 {
     opacity: 1;
 }
 
+
+/* Contact section styles */
+
+.contact form {
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.contact form input:not([type="submit"]) {
+    flex-basis: 48%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.contact form textarea {
+    flex-basis: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    height: 100px;
+}
+
+.social-links {
+    margin-top: 75px;
+    text-align: center;
+}
+
+.social-links .social-link {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.social-links .social-link {
+    font-size: 2.5em;
+    color: #007bff;
+    transition: all .3s;
+}
+
+.social-links .social-link:hover {
+    color: #777;
+}
+
+
+/* Main footer styles */
+.main-footer {
+    background-color: #f2f1ed;
+    padding: 30px;
+    text-align: center;
+    color: #777;
+}
